@@ -1,0 +1,11 @@
+<h1>유저목록</h1>
+<% @users.each do |u| %>
+<div class="card">
+  <div class="card-body">
+    아이디 : <%= u.id %><br>
+    등록시간 : <%=u.created_at.strftime("%Y/%m/%d %H:%M")%><br>
+    이메일 : <%=u.email%><br>
+    비밀번호 : <%=u.password%>
+  </div>
+</div>
+<% end %>
